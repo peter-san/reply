@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 import javax.inject.Inject;
 
+/** DashboardController aggregating driven distances and provides them to the web ui. */
 @Controller
 public class DashboardController {
   @Inject

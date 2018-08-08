@@ -27,6 +27,7 @@ import java.util.Set;
 
 import javax.annotation.PreDestroy;
 
+/** DemandService manages demands and users. */
 @RestController
 @RequestMapping("/api")
 public class DemandService {

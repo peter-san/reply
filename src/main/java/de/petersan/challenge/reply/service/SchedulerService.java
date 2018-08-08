@@ -18,6 +18,10 @@ import java.util.stream.Collectors;
 
 import javax.inject.Inject;
 
+/**
+ * SchedulerService provides the scheduling. It is asynchronous because the operation may be time
+ * consuming.
+ */
 @RestController
 @RequestMapping("/api/scheduler")
 public class SchedulerService {

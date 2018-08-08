@@ -28,6 +28,7 @@ import java.util.Set;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
+/** Car service manages the cars. */
 @RestController
 @RequestMapping("/api/cars")
 public class CarService {

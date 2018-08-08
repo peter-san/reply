@@ -9,6 +9,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
+/**
+ * Scheduler solves a simple m-TSPTW problem using deep-first-search approach. It assigns sorted by
+ * time demands to the routes.
+ */
 public class Scheduler {
 
   private final Demand[] demands;

@@ -17,6 +17,7 @@ import java.util.stream.IntStream;
 
 import javax.annotation.PostConstruct;
 
+/** Simulator creates several cars and moves them regularly. */
 @Configuration
 @EnableScheduling
 @ConditionalOnProperty(value = "simulator.active", havingValue = "true")
