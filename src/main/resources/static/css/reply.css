@@ -1,0 +1,25 @@
+.chart {
+	margin:20px;
+}
+
+.chart .bar{
+	padding: 5px;
+	margin-left:20px;
+	background:red;
+	position:absolute;
+}
+
+.street{
+	height:30px;
+	background:lightgray ;
+	position:relative;
+}
+
+.street .car {
+	margin-top:5px;
+	position:absolute;
+	background: grey;
+	width: 20px;
+	text-align: center;
+	left: 30%;
+}

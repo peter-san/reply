@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>REPLY CHALLENGE</title>
+	<link th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+	<link th:href="@{/css/reply.css}" rel="stylesheet" media="screen"/>
+
+</head>
+<body>
+
+	<div class="container">
+		<h3>Replay Cars</h3>
+		<div class="panel panel-default">	
+			<div th:each="pair:${cars}" class="chart">
+				<span th:text="${pair.left.id}" ></span>
+				<span class = "bar" th:id ="'bar_'+${pair.left.id}" th:text = "${pair.right}" th:style = "'width: '+${pair.right}+'px'"></span>
+			</div>
+			
+			<div class="street"  th:each="pair:${cars}">
+				<div th:id = "'car_'+${pair.left.id}" class="car" th:style = "'left: '+${pair.left.position}+'%'">
+					<span th:text="${pair.left.id}" ></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script th:src="@{/webjars/jquery/2.2.4/jquery.min.js}"></script>
+	<script src="/webjars/sockjs-client/1.0.2/sockjs.min.js"></script>
+	<script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
+	<script th:src="@{/js/reply.js}"></script>
+</body>
+</html>
